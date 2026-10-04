@@ -98,3 +98,26 @@ int getSupplierCount(void)
 {
     return supplierCount;
 }
+
+void supplierMenu(void)
+{
+    int choice;
+
+    do {
+        printf("\n--- SUPPLIER MANAGEMENT ---\n");
+        printf("1. Add Supplier\n");
+        printf("2. Display Suppliers\n");
+        printf("3. Search Supplier\n");
+        printf("4. Back to Main Menu\n");
+        printf("Enter choice: ");
+        choice = readInt();
+
+        switch (choice) {
+            case 1: addSupplier(); break;
+            case 2: displaySuppliers(); break;
+            case 3: searchSupplier(); break;
+            case 4: break;
+            default: printf("Invalid choice.\n");
+        }
+    } while (choice != 4);
+}

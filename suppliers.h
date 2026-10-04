@@ -6,6 +6,7 @@
 void addSupplier(void);
 void displaySuppliers(void);
 void searchSupplier(void);
+void supplierMenu(void);
 
 int getSupplierCount(void);
 
