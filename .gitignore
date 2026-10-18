@@ -1,0 +1,13 @@
+# Ignore the compiled C files
+*.o
+
+# Ignore the program itself
+*.exe
+mfms
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Windows and Mac junk files
+Thumbs.db
+.DS_Store
